@@ -1,0 +1,146 @@
+================================================================================
+COUNTRY MISMATCH CANDIDATE: St Bernardus Church | page says Caribbean Netherlands | coords 12.1527168 -68.2733504 | geocoder ['Netherlands', 'NL', 'Nederland', 'Netherlands', 'Kingdom of the Netherlands'] | https://airial.travel/attractions/caribbean-netherlands/kralendijk/st-bernardus-church--MYDNdLG
+================================================================================
+PAGE : Runway Manila | Pasay City | https://airial.travel/attractions/philippines/pasay-city/runway-manila-Yx5iPTHA
+FLAGS: ['unsafe:violence_crime'] | relevance: place
+POST : Need to figure out where to rest/hang out after check out hotel before plane ride | https://www.reddit.com/r/Philippines_Expats/comments/1i6axf4/need_to_figure_out_where_to_resthang_out_after/
+TEXT : Need to figure out where to rest/hang out after check out hotel before plane ride / If I check out at hotel at noon but plane doesn't leave until much later at night, I need somewhere to chill and hang out. /  / Preferably closer to bgc and or NAIA. /  / Any tips would be appreciated. / Try The Wings transit lounge at NAIA terminal 3. / NAIA has pods for rent in T3, if that's your terminal.  They are really com
+================================================================================
+PAGE : Kangerlussuaq Sand Dunes | Kangerlussuaq | https://airial.travel/attractions/greenland/kangerlussuaq/kangerlussuaq-sand-dunes-G77rpYIz
+FLAGS: ['off_topic'] | relevance: none
+POST : Tips for Off-Roading at the Sand Dunes | https://www.reddit.com/r/4x4/comments/ju3yvt/tips_for_offroading_at_the_sand_dunes/
+TEXT : Tips for Off-Roading at the Sand Dunes / $16 / When airing down, please consider that different tires will have difference “ideal pressure” and “lowest possible pressure”. I’ve been to 4 psi in the sand 😬    /    / I’ve seen 15 psi be too low for my tow vehicle (and yes, I’ve aired down my tow vehicle) and I’ve seen 15 psi not make a dent on new load range E tires on my Jeep. BTW, tires tend to be like sh
+================================================================================
+PAGE : Kangerlussuaq Sand Dunes | Kangerlussuaq | https://airial.travel/attractions/greenland/kangerlussuaq/kangerlussuaq-sand-dunes-G77rpYIz
+FLAGS: ['off_topic'] | relevance: none
+POST : Advice for backpacking Great Sand Dunes this weekend? | https://www.reddit.com/r/coloradohikers/comments/1cwlk2n/advice_for_backpacking_great_sand_dunes_this/
+TEXT : Advice for backpacking Great Sand Dunes this weekend? / I've got around 30 nights of backpacking experience in the Rockies, but none camping on sand. /  / Permits: My first night is in the dunes and second along the sand ramp trail. /  / I usually cowboy camp in a bivy but am not sure if that'd work with sand blowing in my face all night? /  / If bivy won't work then all my tents are trekking pole ones where I 
+================================================================================
+PAGE : Kangerlussuaq Sand Dunes | Kangerlussuaq | https://airial.travel/attractions/greenland/kangerlussuaq/kangerlussuaq-sand-dunes-G77rpYIz
+FLAGS: ['off_topic'] | relevance: none
+POST : Great Sand Dunes advice? | https://www.reddit.com/r/camping/comments/15y84cm/great_sand_dunes_advice/
+TEXT : Great Sand Dunes advice? / Hi! I’m planning a trip to great sand dunes with my girlfriend as a birthday present. The only issue is that she’s very well versed in national parks and she usually plans these trips for us and I really know nothing about planning the optimal trip to sand dunes. We can handle difficult hikes and love backcountry or dispersed camping. Wondering if anyone has some advice re
+================================================================================
+PAGE : Kangerlussuaq Sand Dunes | Kangerlussuaq | https://airial.travel/attractions/greenland/kangerlussuaq/kangerlussuaq-sand-dunes-G77rpYIz
+FLAGS: ['off_topic'] | relevance: none
+POST : The most unique and difficult hike I’ve ever done. Great Sand Dunes National Park, Colorado, USA. | https://www.reddit.com/r/hiking/comments/piyoz6/the_most_unique_and_difficult_hike_ive_ever_done/
+TEXT : The most unique and difficult hike I’ve ever done. Great Sand Dunes National Park, Colorado, USA. /  / God, I remember hiking to High Dune. Halfway there, I started walking backwards because it used different muscles. I would switch back and forth every five minutes until I made it.  /  / On the way down, we ran down some of the hills. I ended up running too fast and face planting in the sand. I thought i
+================================================================================
+PAGE : Kangerlussuaq Sand Dunes | Kangerlussuaq | https://airial.travel/attractions/greenland/kangerlussuaq/kangerlussuaq-sand-dunes-G77rpYIz
+FLAGS: ['off_topic'] | relevance: none
+POST : Visiting Sand Dune National Park - Any Tips? | https://www.reddit.com/r/nationalparks/comments/1ercdpk/visiting_sand_dune_national_park_any_tips/
+TEXT : Visiting Sand Dune National Park - Any Tips? / $18 / $17 / If flowing, Medano Creek at the base of the dunes is treated as a day at the beach. You can hang out in a beach chair and cool your feet or just sit in the flowing water. What I’m saying is, bring a chair and a towel and relax. / There are a few places by Zapata that give amazing views for sunset.  /  / If the wind is blowing you will enjoy the face p
+================================================================================
+PAGE : Lake Conway | None | https://airial.travel/attractions/united-states/lake-conway-w4qffg5w
+FLAGS: ['unsafe:drugs'] | relevance: place
+POST : Seeking fishing advice for central Arkansas | https://www.reddit.com/r/Arkansas/comments/1laygm0/seeking_fishing_advice_for_central_arkansas/
+TEXT : Seeking fishing advice for central Arkansas / I’m traveling to Conway from Colorado for a family fishing trip next week. We do this every year and every yeah I don’t even get a bite and I’m sick of it. I typically just use a worm because my uncle from Holly grove swears by them but I’ve had no luck. We usually go to lake Conway and another spot my uncle swear by. I would be willing to drive up to an
+================================================================================
+PAGE : Showa Yokocho | Inuyama | https://airial.travel/attractions/japan/inuyama/showa-yokocho-U9kt_StJ
+FLAGS: ['off_topic'] | relevance: none
+POST : Questions for trip to Nagoya | https://www.reddit.com/r/Nagoya/comments/189o731/questions_for_trip_to_nagoya/
+TEXT : Questions for trip to Nagoya / $18 / $17
+================================================================================
+PAGE : Ca' del Bosco Erbusco | None | https://airial.travel/attractions/italy/ca-del-bosco-erbusco-u_42uZXA
+FLAGS: ['off_topic'] | relevance: none
+POST : A tourist visiting | https://www.reddit.com/r/brescia/comments/1k9ibla/a_tourist_visiting/
+TEXT : A tourist visiting / Buonasera! / I will be visiting the area soon. I was thinking about visiting Lago d'Iseo and maybe doing s wine tour or something. Any reccomendations? I will be there for a day(24h), so stay reccomendations are welcome as well. / Thanks! / You're in luck,.all the area south to lake Iseo Is Franciacorta, a sparkling wine made with the classic champenoise method. There are countless wi
+================================================================================
+PAGE : Broad Hill | None | https://airial.travel/attractions/united-kingdom/broad-hill-GrIn9j0D
+FLAGS: ['off_topic'] | relevance: none
+POST : Sunrise ideas? | https://www.reddit.com/r/Aberdeen/comments/14vr5hq/sunrise_ideas/
+TEXT : Sunrise ideas? / Hi all! I’m looking for recommendations for where to see the best sunrise in aberdeen. I did ponder bennachie, I’ve been up a few times no bother but I’m not so keen climbing myself in the dark. The beach maybe? Just wondered if anyone knows any secret spots. Thanks! / Could try Brimmond Hill. Not such a difficult climb and decent views of Aberdeen.
+================================================================================
+PAGE : Lake Lugano | None | https://airial.travel/attractions/lake-lugano-YM6qMQA_
+FLAGS: ['off_topic'] | relevance: none
+POST : Solo trip to Switzerland-any recommendations or tips? | https://www.reddit.com/r/solotravel/comments/1iqrhue/solo_trip_to_switzerlandany_recommendations_or/
+TEXT : Solo trip to Switzerland-any recommendations or tips? / $17 / $16
+================================================================================
+PAGE : Super Potato Akihabara | Chiyoda City | https://airial.travel/attractions/japan/chiyoda-city/super-potato-akihabara-ICzyqOW6
+FLAGS: ['off_topic'] | relevance: none
+POST : Help with a 7-day Tokyo itinerary | https://www.reddit.com/r/JapanTravel/comments/194vfhy/help_with_a_7day_tokyo_itinerary/
+TEXT : Help with a 7-day Tokyo itinerary / $19 / Day 4, consider adding Yodobashi Camera Akiba at the end of your day. Most Akiba stores close around 8 but Yodobashi stays open until 10. And the walls of gachapon on the toys floor is eye-popping
+================================================================================
+PAGE : America the Beautiful Park Colorado Springs | Colorado Springs | https://airial.travel/attractions/united-states/colorado-springs/america-the-beautiful-park-colorado-springs-ARXgG13U
+FLAGS: ['unsafe:drugs'] | relevance: area
+POST : I'm looking for the non obvious places to visit in Colorado Springs. | https://www.reddit.com/r/ColoradoSprings/comments/7fkk3h/im_looking_for_the_non_obvious_places_to_visit_in/
+TEXT : I'm looking for the non obvious places to visit in Colorado Springs. / Hi everybody. I'm currently battling a terminal illness and looking for a spot in Colorado to move to when I'm through with all these treatments. I fell in love with the state as a kid when I would visit my grandparents in Estes Park. I recently visited my aunt and uncle in Telluride, but there is no way I can afford to live in e
+================================================================================
+PAGE : Arizona Boardwalk | Scottsdale | https://airial.travel/attractions/united-states/scottsdale/arizona-boardwalk-mZmC6_hc
+FLAGS: ['off_topic'] | relevance: none
+POST : Visiting next week with kids, please help me with ideas | https://www.reddit.com/r/Scottsdale/comments/1ji0jmz/visiting_next_week_with_kids_please_help_me_with/
+TEXT : Visiting next week with kids, please help me with ideas / I'm a single dad trying to give my kids a super fun spring break, any ideas are welcome!  Not necessarily looking for super cheap, but on a budget so anything in the "affordable" category is always good.  We've got baseball and the hotel pools planned.  Any suggestions for other things to do with a 9 and 11 year old?  Thanks! / The oddesy aquar
+================================================================================
+PAGE : Göreme Open-Air Museum | Göreme | https://airial.travel/attractions/türkiye/göreme/göreme-open-air-museum-40usGvHp
+FLAGS: ['off_topic'] | relevance: none
+POST : Thoughts my Turkey Trip // Cappadocia | https://www.reddit.com/r/Turkey/comments/1dtgzss/thoughts_my_turkey_trip_cappadocia/
+TEXT : Thoughts my Turkey Trip // Cappadocia / $1c / How was the driving experience in Cappadocia? I'll be there in mid-November and am planning to self-drive like you for 5 days but I read that driving is stressful and dangerous in Turkey (some do say that outside Istanbul and Ankara it's not that bad though). I'm from Singapore and have been driving regularly in the city for the past six years.
+================================================================================
+PAGE : Mizuki Shigeru Road | Sakaiminato | https://airial.travel/attractions/japan/sakaiminato/mizuki-shigeru-road-mGMvYnYJ
+FLAGS: ['off_topic'] | relevance: none
+POST : I've taken many pictures in Japan, but this is perhaps the one I am proudest of. I set out to go to every prefecture when I came to Japan and exactly 3 years later I completed my quest! Here is my collection of figures from each prefecture. Can you identify any of them? | https://www.reddit.com/r/japan/comments/1krnqc/ive_taken_many_pictures_in_japan_but_this_is/
+TEXT : I've taken many pictures in Japan, but this is perhaps the one I am proudest of. I set out to go to every prefecture when I came to Japan and exactly 3 years later I completed my quest! Here is my collection of figures from each prefecture. Can you identify any of them? /  / The dad from GeGeGe no Kitaro, soaking in a little hot tub.  I never did figure out why he's an eyeball, though.
+================================================================================
+COUNTRY MISMATCH CANDIDATE: Sheung Wan Waterfront Walkway | page says Hong Kong | coords 22.2892717 114.14969479999999 | geocoder ['China', 'CN', '中国', 'China', "People's Republic of China", 'PRC'] | https://airial.travel/attractions/hong-kong/sheung-wan-waterfront-walkway--nJHL6_h
+================================================================================
+PAGE : Nationalpark-Haus Cuxhaven Sahlenburg | Cuxhaven | https://airial.travel/attractions/germany/cuxhaven/nationalpark-haus-cuxhaven-sahlenburg-Cgx51RUQ
+FLAGS: ['off_topic'] | relevance: none
+POST : What are the best places to visit in northern germany? | https://www.reddit.com/r/AskAGerman/comments/1dvuxiy/what_are_the_best_places_to_visit_in_northern/
+TEXT : What are the best places to visit in northern germany? / I have seen a lot of germany but mainly in the west and south. I wanna go to the north tho. So what are the best places, cities, beaches or even islands to visit there? I have been to hamburg once but didnt see much of it. And i have seen some villages on the baltic sea but thats basically all. / The *Wattenmeer* should definitively be on that l
+================================================================================
+PAGE : Wemyss Caves Scotland | East Wemyss | https://airial.travel/attractions/united-kingdom/east-wemyss/wemyss-caves-scotland-1sAP4fe3
+FLAGS: ['unsafe:violence_crime'] | relevance: place
+POST : Visiting Scotland 2nd time - tips for haunted places | https://www.reddit.com/r/Scotland/comments/tyxko8/visiting_scotland_2nd_time_tips_for_haunted_places/
+TEXT : Visiting Scotland 2nd time - tips for haunted places / Hi, I'm planning second visit of Scotland, our main interest are castles and nature, but one member is fan of "haunted places" with dark history, like execution grounds of famous people kings, queens, murderes, monk pushed from the cliff, battlefields... For now the trip should be by the roads between Glasgow -&gt; Edinburg -&gt; Inverness -&gt;
+================================================================================
+PAGE : Bankhead Parkway Scenic Drive | Huntsville | https://airial.travel/attractions/united-states/huntsville/bankhead-parkway-scenic-drive-Z5bLIREx
+FLAGS: ['off_topic'] | relevance: none
+POST : Best trails at Monte Sano state park? | https://www.reddit.com/r/HuntsvilleAlabama/comments/5z9ec3/best_trails_at_monte_sano_state_park/
+TEXT : Best trails at Monte Sano state park? / Me and my girlfriend are going up for a long weekend in April and we're looking for the best trails. Best views, best hiking, anything cool to see. Looking for any and all advice, thanks. / Mountain Mist, McKay Hollow, Stone Cuts, Panther Knob. All great trails and semi challenging. / I got lost up there one time lol. Make sure you take a smartphone that's charged
+================================================================================
+PAGE : Fraunces Tavern | New York | https://airial.travel/attractions/united-states/new-york/fraunces-tavern-CGuZgQ_h
+FLAGS: ['off_topic'] | relevance: none
+POST : Help a first-time visitor to NYC avoid the tourist traps! | https://www.reddit.com/r/AskNYC/comments/3cy45o/help_a_firsttime_visitor_to_nyc_avoid_the_tourist/
+TEXT : Help a first-time visitor to NYC avoid the tourist traps! / I will be in NYC (staying in the Financial District, but will probably roam a good bit) from July 18-20, and don't want to spend the whole time in crowded lines of tourists. Any hidden gems or hole-in-the-walls that I shouldn't miss?  / I'm thinking... /  /  /  / Restaurants: pizza, bagels, delis (cliché, but what the hey) as well as any unique gems 
+================================================================================
+PAGE : Recreation Lagoon | Darwin City | https://airial.travel/attractions/australia/darwin-city/recreation-lagoon-EzaKr9bA
+FLAGS: ['off_topic'] | relevance: none
+POST : Is that dangerous to use Kayak fishing in NT? | https://www.reddit.com/r/darwin/comments/1kkfrot/is_that_dangerous_to_use_kayak_fishing_in_nt/
+TEXT : Is that dangerous to use Kayak fishing in NT? / Hi all, out of curiosity, is that dangerous to use Kayak fishing in NT? I have seen some people using them in the east point, but what about other areas such as river and fresh water. Will it be attached by crocs? /  / Cannot afford boat now /  /    / Thanks / Go to the Adelaide river and do one of those jumping crocodile cruises and then decide. / If you’ve done th
+================================================================================
+PAGE : Cadoxton Village | None | https://airial.travel/attractions/united-kingdom/cadoxton-village-rW87Zxee
+FLAGS: ['off_topic'] | relevance: none
+POST : Working in Cardiff and looking to move to either Cardiff or Newport. | https://www.reddit.com/r/Cardiff/comments/1ef3hze/working_in_cardiff_and_looking_to_move_to_either/
+TEXT : Working in Cardiff and looking to move to either Cardiff or Newport. / Hi folks,  /  / I’ve been working in Cardiff for over a year now, commuting to the office from England two days a week while living with the folks.  /  / I’m in the process of looking to buy but most of the houses I’m looking at in Cardiff in my price range (up to 200k), that don’t need work are either quite a distance out - Llanrumney, 
+================================================================================
+PAGE : Cadoxton Village | None | https://airial.travel/attractions/united-kingdom/cadoxton-village-rW87Zxee
+FLAGS: ['off_topic'] | relevance: none
+POST : Best place to live if I have a job in Penarth | https://www.reddit.com/r/Cardiff/comments/1fo8dcb/best_place_to_live_if_i_have_a_job_in_penarth/
+TEXT : Best place to live if I have a job in Penarth / Hi! I found a job in Penarth and im looking to rent a room in a house share. /  / What's the best place to live if I have to commute to Penarth everyday? /  / My budget is 600 pounds with bills and I would ideally like to live in an area that is close to shops and commercial / Your best bet I think would be Barry.
+================================================================================
+PAGE : Cadoxton Village | None | https://airial.travel/attractions/united-kingdom/cadoxton-village-rW87Zxee
+FLAGS: ['off_topic'] | relevance: none
+POST : How many times have you been on holidays in the UK? | https://www.reddit.com/r/AskUK/comments/1kn6a5j/how_many_times_have_you_been_on_holidays_in_the_uk/
+TEXT : How many times have you been on holidays in the UK? / Please share your highlights- where you went, how long for, why it was wonderful 💜 / as a welsh child, barry island was the de facto place to go other than porthcawl.
+================================================================================
+PAGE : Money Brook Falls | Williamstown | https://airial.travel/attractions/united-states/williamstown/money-brook-falls-XEtZQnLr
+FLAGS: ['off_topic'] | relevance: none
+POST : Planning a two-day trip to The Berkshires | https://www.reddit.com/r/massachusetts/comments/13bwdaz/planning_a_twoday_trip_to_the_berkshires/
+TEXT : Planning a two-day trip to The Berkshires / As the title says. Me and my girlfriend want to plan a two-day summer trip in the Berkshires, and we do not know what to do. We plan to have our hotel in Great Barrington, but we are okay with a little drive. What would be some good things to do? We don't want them to be crazy expensive, and hopefully not spend more than 100$ between the both of us, as we 
+================================================================================
+COUNTRY MISMATCH CANDIDATE: Museo de los Próceres | page says Puerto Rico | coords 18.0790213 -67.1468567 | geocoder ['United States', 'US', 'United States', 'United States', 'United States of America', 'U.S.'] | https://airial.travel/attractions/puerto-rico/museo-de-los-próceres-z0ip62Jz
+================================================================================
+PAGE : Shin-Onomichi Bridge | Onomichi | https://airial.travel/attractions/japan/onomichi/shin-onomichi-bridge-81TlufNe
+FLAGS: ['off_topic'] | relevance: none
+POST : For anyone interested in riding the entire Shimanami Kaido AND going to Rabbit Island in one day | https://www.reddit.com/r/JapanTravel/comments/1ktg122/for_anyone_interested_in_riding_the_entire/
+TEXT : For anyone interested in riding the entire Shimanami Kaido AND going to Rabbit Island in one day / $17 / You can take bicycles on the ferry and make it an overnight trip for people reading.  /  / Stay close to the ferry and then you don’t have to pay for a taxi. Also no problem then to do the whole thing with normal bikes. Also easier to explore the island with bikes as it’s quite big.
+================================================================================
+PAGE : Queenscliff Victoria | Queenscliff | https://airial.travel/attractions/australia/queenscliff/queenscliff-victoria-AFA1VGq1
+FLAGS: ['unsafe:drugs'] | relevance: area
+POST : Bellarine tips? | https://www.reddit.com/r/FishingAustralia/comments/18oyn0c/bellarine_tips/
+TEXT : Bellarine tips? / Hi All, /  / Hoping to catch some silver trevally next week in the Barwon RIver. Saw that a guy on Facebook was catching them on raw chicken, is this a decent bait to stick with or should I try other baits? Any chance of catching trevally on soft plastics? /  / Also hoping to wade the shallows along Clifton Springs for flathead. Any reports of fish from that area? /  / Third question, are ther
+================================================================================
+PAGE : Daita | Setagaya City | https://airial.travel/attractions/japan/setagaya-city/daita-ExEYZCkd
+FLAGS: ['off_topic'] | relevance: none
+POST : [deleted by user] | https://www.reddit.com/r/JapanTravelTips/comments/1lqkywh/one_month_in_tokyo_your_best_nonglamorous/
+TEXT : [deleted by user] / [removed] / $17

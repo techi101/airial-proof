@@ -1,0 +1,7 @@
+data/geocode_cache.json
+__pycache__/
+.pytest_cache/
+
+data/pages/
+OUTREACH_DRAFT.txt
+data/run_log.txt

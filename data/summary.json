@@ -1,0 +1,23 @@
+{
+  "sampled_utc": "2026-11-20T16:58+00:00",
+  "attraction_sitemaps": 29,
+  "urls_in_sitemaps": 270995,
+  "n": 300,
+  "seed": 20261120,
+  "scored_utc": "2026-11-20T17:13+00:00",
+  "fetched_ok": 300,
+  "pages_with_reddit_posts": 151,
+  "reddit_posts_total": 491,
+  "posts_relevance": {
+    "place": 395,
+    "area": 73,
+    "none": 23
+  },
+  "posts_flagged_unsafe": 5,
+  "pages_with_unsafe_flag": 5,
+  "posts_flagged_off_topic": 23,
+  "pages_with_off_topic_flag": 17,
+  "pages_coords_missing": 0,
+  "pages_country_mismatch_candidates": 0,
+  "note": "Rule-based flags, before hand check. See README for hand-checked counts."
+}
