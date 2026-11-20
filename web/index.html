@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Airial Card Check</title>
+<meta name="description" content="A pre-publish check for the Reddit cards on Airial attraction pages, with a 300 page random audit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brand:#0f766e; --brand-soft:#e6f4f1; --brand-ink:#0b5a54;
+  --ink:#0f172a; --ink2:#334155; --muted:#64748b; --line:#e5e7eb; --soft:#f8fafc; --bg:#ffffff;
+  --drop:#b91c1c; --drop-soft:#fdecec; --keep:#15803d; --keep-soft:#e8f5ec; --warn:#a16207; --warn-soft:#fdf6e3;
+  --neutral:#94a3b8;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--brand-ink)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+/* app bar */
+.bar{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:5}
+.bar .wrap{display:flex;align-items:center;gap:12px;height:56px}
+.logo{width:28px;height:28px;border-radius:7px;background:var(--brand);display:grid;place-items:center;color:#fff;font-weight:700;font-size:14px;flex:none}
+.prod{font-weight:600}
+.prod small{color:var(--muted);font-weight:500;margin-left:6px}
+.bar nav{margin-left:auto;display:flex;gap:18px;font-size:14px}
+.bar nav a{color:var(--ink2);text-decoration:none}
+.bar nav a:hover{color:var(--brand)}
+/* hero */
+.hero{padding:40px 0 28px;display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;font-size:13px;font-weight:600;color:var(--brand-ink);background:var(--brand-soft);padding:4px 10px;border-radius:999px}
+h1{font-size:34px;line-height:1.18;letter-spacing:-.02em;margin:14px 0 12px}
+.lede{font-size:17px;color:var(--ink2);margin:0 0 16px;max-width:60ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:12.5px;color:var(--ink2);border:1px solid var(--line);border-radius:999px;padding:3px 10px;background:#fff;white-space:nowrap}
+.pipe{border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--soft)}
+.pipe h3{margin:0 0 12px;font-size:13px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.step{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:8px}
+.step b{display:block;font-size:14px}
+.step span{font-size:13px;color:var(--muted)}
+.num{width:22px;height:22px;border-radius:50%;background:var(--brand);color:#fff;font-size:12px;font-weight:600;display:grid;place-items:center;flex:none;margin-top:1px}
+.decide{display:flex;gap:8px;margin-top:4px}
+/* stat cards */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:8px 0 12px}
+.card{border:1px solid var(--line);border-radius:12px;background:#fff;padding:16px}
+.stat .label{font-size:13px;color:var(--muted);font-weight:500}
+.stat .value{font-size:28px;font-weight:700;letter-spacing:-.02em;margin:4px 0 2px;font-variant-numeric:tabular-nums}
+.stat .sub{font-size:12.5px;color:var(--muted)}
+.stat.hl{border-color:var(--brand);box-shadow:inset 0 0 0 1px var(--brand)}
+.stat.hl .value{color:var(--brand-ink)}
+.caveat{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--ink2);background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-bottom:36px}
+.caveat i{font-style:normal;font-weight:700;color:var(--muted)}
+/* sections */
+section{margin:0 0 40px}
+.sh{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+h2{font-size:21px;letter-spacing:-.01em;margin:0}
+.sh p{margin:4px 0 0;color:var(--muted);font-size:14px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card h3{margin:0 0 4px;font-size:15px}
+.card .hint{margin:0 0 14px;color:var(--muted);font-size:13px}
+/* bars */
+.hbar{display:grid;grid-template-columns:150px 1fr 70px;gap:10px;align-items:center;margin:8px 0;font-size:13.5px;position:relative}
+.hbar .t{color:var(--ink2)}
+.track{height:14px;background:transparent;position:relative}
+.fill{height:14px;border-radius:0 4px 4px 0;background:var(--brand);min-width:3px}
+.fill.drop{background:var(--drop)} .fill.keep{background:var(--neutral)}
+.hbar .v{font-variant-numeric:tabular-nums;color:var(--ink);font-weight:600;text-align:right}
+.hbar .v small{color:var(--muted);font-weight:500}
+.legend{display:flex;gap:14px;font-size:12.5px;color:var(--muted);margin-top:10px;flex-wrap:wrap}
+.sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.foot{margin-top:12px;padding-top:12px;border-top:1px solid var(--line);font-size:13px;color:var(--ink2)}
+#tip{position:fixed;pointer-events:none;background:var(--ink);color:#fff;font-size:12.5px;padding:6px 9px;border-radius:6px;opacity:0;transition:opacity .1s;z-index:20;max-width:260px}
+/* queue */
+.tabs{display:inline-flex;border:1px solid var(--line);border-radius:9px;padding:3px;background:var(--soft);gap:2px;flex-wrap:wrap}
+.tabs button{border:0;background:transparent;font:inherit;font-size:13.5px;padding:6px 12px;border-radius:7px;color:var(--ink2);cursor:pointer}
+.tabs button[aria-selected=true]{background:#fff;color:var(--ink);font-weight:600;box-shadow:0 1px 2px rgba(15,23,42,.08)}
+.tabs .c{color:var(--muted);font-weight:500;margin-left:4px}
+.q{border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.qh,.qr{display:grid;grid-template-columns:1.1fr 1.7fr 1fr 110px;gap:14px;padding:12px 16px;align-items:start}
+.qh{background:var(--soft);font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.qr{border-top:1px solid var(--line);font-size:14px}
+.qr:hover{background:#fcfdfd}
+.pg b{display:block;font-weight:600}
+.pg span{font-size:12.5px;color:var(--muted)}
+.post a{color:var(--ink);text-decoration:none;font-weight:500}
+.post a:hover{text-decoration:underline}
+.post .note{font-size:12.5px;color:var(--muted);margin-top:3px}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:12px;border-radius:6px;padding:2px 7px;background:var(--soft);border:1px solid var(--line);color:var(--ink2);white-space:nowrap}
+.tag.rule{background:#fff}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;letter-spacing:.03em;border-radius:6px;padding:3px 8px}
+.badge.DROP{background:var(--drop-soft);color:var(--drop)}
+.badge.KEEP{background:var(--keep-soft);color:var(--keep)}
+.badge::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.dec small{display:block;font-size:11.5px;color:var(--muted);margin-top:4px}
+.ml{display:none}
+/* inspector */
+.insp-head{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+select{font:inherit;font-size:14px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:#fff;max-width:100%}
+.ic{display:grid;grid-template-columns:72px 1fr auto;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line);font-size:14px}
+.ic:first-of-type{border-top:0}
+.ic .rel{font-size:12px;color:var(--muted)}
+.ic a{color:var(--ink);text-decoration:none}
+.ic a:hover{text-decoration:underline}
+/* next */
+.next{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.next .card b{display:block;margin-bottom:6px}
+.next .card p{margin:0;color:var(--ink2);font-size:14px}
+.next .k{font-size:12px;color:var(--brand-ink);font-weight:600;margin-bottom:8px;display:block}
+footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:13px}
+footer ul{margin:6px 0 0;padding-left:18px}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;background:var(--soft);border:1px solid var(--line);border-radius:4px;padding:0 4px}
+@media (max-width:1000px){
+  .hero{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stats .stat.hl{grid-column:1/-1}
+  .grid2,.next{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  .bar nav{display:none}
+  h1{font-size:26px}
+  .lede{font-size:15.5px}
+  .hbar{grid-template-columns:104px 1fr 56px;gap:8px}
+  .qh{display:none}
+  .qr{grid-template-columns:1fr;gap:8px}
+  .ml{display:inline;color:var(--muted);font-size:12px;margin-right:4px}
+  .ic{grid-template-columns:auto 1fr;gap:4px 10px}
+  .ic .rel{grid-column:2}
+  .dec{display:flex;align-items:center;gap:8px}
+  .dec small{margin:0}
+  .step span{display:none}
+  .pipe{padding:14px}
+  .hbar{grid-template-columns:118px 1fr 64px}
+}
+</style>
+</head>
+<body>
+<div class="bar"><div class="wrap">
+  <div class="logo">✓</div>
+  <div class="prod">Card Check <small>for airial.travel place pages</small></div>
+  <nav><a href="#queue">Review queue</a><a href="#inspect">Page inspector</a><a href="#next">Next steps</a></nav>
+</div></div>
+
+<main class="wrap">
+  <div class="hero">
+    <div>
+      <span class="eyebrow">Trust &amp; safety QA · Reddit cards on attraction pages</span>
+      <h1 id="h1">Colorado hiking threads on a Greenland page, and a drug thread on a Jaipur market page</h1>
+      <p class="lede">Airial's place pages embed Reddit threads. A cheap check before publishing catches the cards a reader would notice. In a random sample of <b id="l-n"></b> pages, <b>8 cards on 3 pages</b> should not be there.</p>
+      <div class="meta" id="meta"></div>
+    </div>
+    <div class="pipe" aria-label="How the check works">
+      <h3>What runs on every card</h3>
+      <div class="step"><div class="num">1</div><div><b>Read the page</b><span>JSON-LD for name and coordinates, Next.js payload for the Reddit cards</span></div></div>
+      <div class="step"><div class="num">2</div><div><b>Does the thread name the place?</b><span>place → area (town only) → none flags <code>off_topic</code></span></div></div>
+      <div class="step"><div class="num">3</div><div><b>Unsafe topic or empty post?</b><span>drugs, sex work, violence, self-harm; <code>[deleted]</code> with no comments</span></div></div>
+      <div class="decide"><span class="badge KEEP">KEEP</span><span class="badge DROP">DROP</span><span class="chip">flags go to a human queue</span></div>
+    </div>
+  </div>
+
+  <div class="stats" id="stats"></div>
+  <div class="caveat"><i>i</i><div id="cav"></div></div>
+
+  <section>
+    <div class="sh"><div><h2>What the sample shows</h2><p>Most cards are fine. The rules are a good filter for a review queue, not an auto-delete.</p></div></div>
+    <div class="grid2">
+      <div class="card">
+        <h3>Does the Reddit card name the place?</h3>
+        <p class="hint" id="rel-hint"></p>
+        <div id="rel"></div>
+        <div class="foot">Cards that name neither the place nor its town are flagged <code>off_topic</code> and sent to the queue.</div>
+      </div>
+      <div class="card">
+        <h3>Hand check of every flagged card</h3>
+        <p class="hint" id="hand-hint"></p>
+        <div id="hand"></div>
+        <div class="legend"><span><i class="sw" style="background:var(--drop)"></i>Should be dropped</span><span><i class="sw" style="background:var(--neutral)"></i>Fine to keep</span></div>
+        <div class="foot" id="prec"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="queue">
+    <div class="sh">
+      <div><h2>Review queue</h2><p>Every card the rules dropped, with the hand verdict. Click a title to open the Reddit thread.</p></div>
+      <div class="tabs" role="tablist" id="tabs"></div>
+    </div>
+    <div class="q" id="q"></div>
+  </section>
+
+  <section id="inspect">
+    <div class="sh"><div><h2>Page inspector</h2><p>All Reddit cards on one page, as <code>python vet.py &lt;url&gt;</code> prints them.</p></div></div>
+    <div class="card">
+      <div class="insp-head"><label for="pick" class="hint" style="margin:0">Page</label><select id="pick"></select><a id="plink" target="_blank" rel="noopener" style="font-size:13.5px">Open live page ↗</a></div>
+      <div id="cards"></div>
+    </div>
+  </section>
+
+  <section id="next">
+    <div class="sh"><div><h2>What I'd do next</h2><p>Small steps that fit into the page build Airial already runs.</p></div></div>
+    <div class="next">
+      <div class="card"><span class="k">1 · Before publish</span><b>Run <code>vet_post</code> as a gate</b><p>Call it when a card is attached to a page. DROP sends the card to a review queue instead of the live page, so the Greenland and Jaipur cases never ship.</p></div>
+      <div class="card"><span class="k">2 · Borderline cases</span><b>Small LLM judge for "area" and flagged cards</b><p>The keyword rule was right on 8 of 23 <code>off_topic</code> flags. A cheap judge on only the flagged and town-level cards would cut the false hits without judging all cards.</p></div>
+      <div class="card"><span class="k">3 · Measure recall</span><b>Hand-label a random set of kept cards</b><p>I only checked flagged cards, so misses are unknown. A labelled sample of kept cards gives a real miss rate to track each week.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <b style="color:var(--ink2)">Method and limits</b>
+  <ul id="limits"></ul>
+  <p style="margin-top:12px">Code: <code>airial_audit/checks.py</code> (rules), <code>extract.py</code> (page reader), <code>geo.py</code> (coordinate check), <code>audit.py</code> (sampling). 22 tests, standard library only. Data on this page: <code>web/data.json</code>, built by <code>web/export.py</code> from <code>data/summary.json</code>, <code>data/results.jsonl</code> and <code>data/hand_check.csv</code>.</p>
+</div></footer>
+<div id="tip" role="tooltip"></div>
+
+<script src="data.js"></script>
+<script>
+const VERDICT = {
+  wrong_place:["Wrong place","DROP"], not_for_visitors:["Not for visitors","DROP"], empty:["Empty post","DROP"], unsafe_real:["Unsafe, real","DROP"],
+  regional_ok:["Regional, fine","KEEP"], sensitive_mild:["Mildly sensitive","KEEP"], rule_wrong:["Rule was wrong","KEEP"]
+};
+const fmt = n => n.toLocaleString("en-US");
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const tip = document.getElementById("tip");
+function hover(el, text){
+  el.addEventListener("mousemove", e => { tip.textContent = text; tip.style.opacity = 1; tip.style.left = Math.min(e.clientX + 12, innerWidth - 270) + "px"; tip.style.top = (e.clientY + 14) + "px"; });
+  el.addEventListener("mouseleave", () => tip.style.opacity = 0);
+}
+function bars(host, rows, max){
+  host.innerHTML = rows.map(r => `<div class="hbar" data-t="${esc(r.tip)}"><span class="t">${esc(r.label)}</span><div class="track"><div class="fill ${r.cls||""}" style="width:${(r.n/max*100).toFixed(1)}%"></div></div><span class="v">${fmt(r.n)}${r.sub?` <small>${r.sub}</small>`:""}</span></div>`).join("");
+  host.querySelectorAll(".hbar").forEach(b => hover(b, b.dataset.t));
+}
+
+function render(D){
+  const S = D.summary, H = D.hand_verdict_counts;
+  const pct = (a,b) => Math.round(a/b*100);
+  document.getElementById("l-n").textContent = S.n;
+  document.getElementById("meta").innerHTML = [
+    "Pages fetched 20 Nov 2026, 16:58 to 17:12 UTC", `${S.n} pages, seed ${S.seed}`, `${fmt(S.urls_in_sitemaps)} URLs in ${S.attraction_sitemaps} sitemaps`, "Public pages only"
+  ].map(t => `<span class="chip">${t}</span>`).join("");
+
+  const flagged = S.posts_flagged_off_topic + S.posts_flagged_unsafe;
+  const bad = H.wrong_place + H.not_for_visitors + H.empty;
+  document.getElementById("stats").innerHTML = [
+    {label:"Pages audited", value:S.fetched_ok, sub:`random, of ${fmt(S.urls_in_sitemaps)}`},
+    {label:"Pages with Reddit cards", value:S.pages_with_reddit_posts, sub:`${pct(S.pages_with_reddit_posts,S.n)}% of pages audited`},
+    {label:"Reddit cards checked", value:S.reddit_posts_total, sub:"titles, posts and comments"},
+    {label:"Flagged by the rules", value:flagged, sub:`${S.posts_flagged_off_topic} off-topic, ${S.posts_flagged_unsafe} unsafe topic`},
+    {label:"Confirmed bad (hand check)", value:bad, sub:`on 3 of ${S.pages_with_reddit_posts} pages with cards (about 2%)`, hl:true},
+  ].map(s => `<div class="card stat${s.hl?" hl":""}"><div class="label">${s.label}</div><div class="value">${fmt(s.value)}</div><div class="sub">${s.sub}</div></div>`).join("");
+  document.getElementById("cav").innerHTML = `Sample caveat: ${S.n} of about 271k pages, one snapshot. Only the ${flagged} flagged cards were checked by hand, so cards the rules missed are not counted. Rates are rough. Coordinates: ${S.pages_coords_missing} pages missing, ${S.pages_country_mismatch_candidates} in the wrong country.`;
+
+  const R = S.posts_relevance;
+  document.getElementById("rel-hint").textContent = `${fmt(S.reddit_posts_total)} cards on ${S.pages_with_reddit_posts} pages`;
+  bars(document.getElementById("rel"), [
+    {label:"Names the place", n:R.place, sub:`${pct(R.place,S.reddit_posts_total)}%`, tip:`${R.place} cards name the attraction itself`},
+    {label:"Names the town only", n:R.area, sub:`${pct(R.area,S.reddit_posts_total)}%`, tip:`${R.area} cards name only the town around it (kept, marked "area")`},
+    {label:"Names neither", n:R.none, sub:`${pct(R.none,S.reddit_posts_total)}%`, tip:`${R.none} cards flagged off_topic, on ${S.pages_with_off_topic_flag} pages`},
+  ], R.place);
+
+  document.getElementById("hand-hint").textContent = `${D.hand_rows} cards flagged in the sample, each read by hand`;
+  const hv = ["wrong_place","not_for_visitors","empty","regional_ok","rule_wrong","sensitive_mild"];
+  bars(document.getElementById("hand"), hv.map(k => ({label:VERDICT[k][0], n:H[k], cls:VERDICT[k][1]==="DROP"?"drop":"keep", tip:`${H[k]} of ${D.hand_rows}: ${VERDICT[k][0].toLowerCase()} (${VERDICT[k][1]==="DROP"?"should be dropped":"fine to keep"})`})), Math.max(...hv.map(k=>H[k])));
+  document.getElementById("prec").innerHTML = `<b>Rule precision:</b> ${bad} of ${S.posts_flagged_off_topic} off-topic flags were real problems. Unsafe-topic rule: 0 of ${S.posts_flagged_unsafe} serious, 2 mildly sensitive, 3 false hits ("weed lines" in fishing, seaweed, a history of executions).`;
+
+  // queue
+  const Q = D.queue;
+  const groups = {all:["All flags",()=>true], drop:["Should drop",q=>q.final==="DROP"], keep:["Rule too strict",q=>q.final==="KEEP"]};
+  const tabs = document.getElementById("tabs");
+  tabs.innerHTML = Object.entries(groups).map(([k,[l,f]],i) => `<button role="tab" data-k="${k}" aria-selected="${k==="drop"}">${l}<span class="c">${Q.filter(f).length}</span></button>`).join("");
+  const qhost = document.getElementById("q");
+  function showQ(k){
+    tabs.querySelectorAll("button").forEach(b => b.setAttribute("aria-selected", b.dataset.k===k));
+    const rows = Q.filter(groups[k][1]);
+    qhost.innerHTML = `<div class="qh"><span>Page</span><span>Reddit card</span><span>Why flagged</span><span>Decision</span></div>` + rows.map(q => `
+      <div class="qr">
+        <div class="pg"><b>${esc(q.page)}</b><span>${esc([q.locality,q.country].filter(Boolean).join(", "))}${q.in_sample===false?" · found by hand, outside sample":""}</span></div>
+        <div class="post"><a href="${esc(q.url)}" target="_blank" rel="noopener">${esc(q.title)}</a><div class="note">${esc(q.note)}</div></div>
+        <div class="tags"><span class="ml">Rule:</span>${q.reasons.map(r=>`<span class="tag rule">${esc(r)}</span>`).join("")}<span class="tag">${esc((VERDICT[q.hand]||[q.hand])[0])}</span></div>
+        <div class="dec"><span class="badge ${q.final}">${q.final}</span><small>rule said ${q.rule}</small></div>
+      </div>`).join("");
+  }
+  tabs.addEventListener("click", e => { const b = e.target.closest("button"); if (b) showQ(b.dataset.k); });
+  showQ("drop");
+
+  // inspector
+  const pick = document.getElementById("pick"), P = D.pages;
+  pick.innerHTML = P.map((p,i) => `<option value="${i}">${esc(p.name)}${p.country?" · "+esc(p.country):""} (${p.posts.length} cards)</option>`).join("");
+  const start = Math.max(0, P.findIndex(p => p.name.startsWith("Kangerlussuaq")));
+  function showP(i){
+    const p = P[i]; document.getElementById("plink").href = p.url;
+    document.getElementById("cards").innerHTML = p.posts.map(c => {
+      const d = c.final || c.rule;
+      return `<div class="ic"><span class="badge ${d}">${d}</span><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.title)}</a><span class="rel">${esc(c.relevance)}${c.reasons.length?" · "+esc(c.reasons.join(", ")):""}${c.final && c.final!==c.rule?" · rule said "+c.rule:""}</span></div>`;
+    }).join("");
+  }
+  pick.value = start; showP(start);
+  pick.addEventListener("change", () => showP(+pick.value));
+
+  document.getElementById("limits").innerHTML = [
+    `${S.n} pages drawn at random (seed ${S.seed}) from ${fmt(S.urls_in_sitemaps)} URLs in ${S.attraction_sitemaps} attraction sitemaps; all ${S.fetched_ok} fetched at 1 request a second.`,
+    "Rules are keyword based. Only flagged cards were hand checked, so recall is unknown.",
+    "The Chandpole Bazaar case was found by reading the page by hand and is not counted in the sample numbers. A saved copy is a test fixture.",
+    "Country check: coordinates reverse-geocoded with OpenStreetMap Nominatim, territories mapped to their parent country.",
+    "Read only public pages; robots.txt allows normal agents. Rule-based flags as of 20 Nov 2026; a new run will differ."
+  ].map(t => `<li>${esc(t)}</li>`).join("");
+}
+// served over http: read data.json; opened as a local file: use the same data from data.js
+if (location.protocol.startsWith("http")) fetch("data.json").then(r => r.json()).then(render).catch(() => render(window.DATA));
+else render(window.DATA);
+</script>
+</body>
+</html>

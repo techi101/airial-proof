@@ -1,5 +1,11 @@
 # airial-proof: a pre-publish check for the Reddit cards on Airial's place pages
 
+![Card Check demo page](docs/screenshot_1440.png)
+
+- **Problem:** Airial's attraction pages embed Reddit threads, and retrieval sometimes attaches threads about another place (Colorado hikes on a Greenland page) or an unsafe topic (a drug thread on a Jaipur market page).
+- **Result:** in a random sample of 300 live pages, 8 cards on 3 of the 151 pages with cards should not be there; the checker flags them for a human before publishing.
+- **Demo page:** open `web/index.html` in a browser (no install, no server), or run `python -m http.server -d web` and visit http://localhost:8000. Mobile view: [docs/screenshot_390.png](docs/screenshot_390.png).
+
 Airial publishes public attraction pages (title pattern "Best of TikTok, Instagram & Reddit Travel Guide") and each one embeds Reddit threads about the place. This repo is a small checker that decides, per thread, whether it belongs on that page, plus an audit of a random sample of live pages.
 
 Snapshot: pages fetched 20 Nov 2026 (16:58 to 17:12 UTC). Everything below is from that snapshot.
