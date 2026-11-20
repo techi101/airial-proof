@@ -2,6 +2,8 @@
 
 ![Card Check demo page](docs/screenshot_1440.png)
 
+**Try it live:** https://airial-proof.vercel.app · **Code:** https://github.com/techi101/airial-proof
+
 - **Problem:** Airial's attraction pages embed Reddit threads, and retrieval sometimes attaches threads about another place (Colorado hikes on a Greenland page) or an unsafe topic (a drug thread on a Jaipur market page).
 - **Result:** in a random sample of 300 live pages, 8 cards on 3 of the 151 pages with cards should not be there; the checker flags them for a human before publishing.
 - **Demo page:** open `web/index.html` in a browser (no install, no server), or run `python -m http.server -d web` and visit http://localhost:8000. Mobile view: [docs/screenshot_390.png](docs/screenshot_390.png).
